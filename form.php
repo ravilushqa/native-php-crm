@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +46,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="responsive-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="lesson1/index.php">Урок 1</a></li>
+                        <li><a href="lesson1/index.php">Новости</a></li>
                         <li><a href="../../archive/2/index.php">Урок 2</a></li>
                         <li><a href="../../archive/3/index.php">Урок 3</a></li>
                         <li><a href="../../archive/4/index.php">Урок 4</a></li>
