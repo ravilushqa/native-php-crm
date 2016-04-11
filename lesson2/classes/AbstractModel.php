@@ -16,7 +16,17 @@ abstract class AbstractModel
     {
         $db = new DB();
         $sql = 'SELECT * FROM ' .static::$table . 'WHERE id=' . $id;
-        return $db->queryOne('$sql', static::$class);
+        return $db->queryOne($sql, static::$class);
 
     }
+    public static function News_insert($data){
+        $sql = "
+    INSERT INTO news
+    (title, text)
+    VALUES
+    ('" . $data['title'] ."', '" . $data['text'] ."' )
+    ";
+        Sql_exec($sql);
+    }
+
 }

@@ -46,15 +46,15 @@
                 </div>
                 <div class="collapse navbar-collapse" id="responsive-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="lesson1/index.php">Новости</a></li>
-                        <li><a href="../../archive/2/index.php">Урок 2</a></li>
-                        <li><a href="../../archive/3/index.php">Урок 3</a></li>
-                        <li><a href="../../archive/4/index.php">Урок 4</a></li>
-                        <li><a href="../../archive/5/index.php">Урок 5</a></li>
-                        <li><a href="../../archive/6/index.php">Урок 6</a></li>
-                        <li><a href="../../archive/7/index.php">Урок 7</a></li>
-                        <li><a href="../../archive/8/index.php">Урок 8</a></li>
-                        <li><a href="../../portfolio/index.html">Portfolio</a></li>
+                        <li><a href="/lesson1">Урок 1</a></li>
+                        <li><a href="/lesson2">Урок 2</a></li>
+                        <li><a href="/lesson3">Урок 3</a></li>
+                        <li><a href="/lesson4">Урок 4</a></li>
+                        <li><a href="/lesson5">Урок 5</a></li>
+                        <li><a href="/lesson6">Урок 6</a></li>
+                        <li><a href="/lesson7">Урок 7</a></li>
+                        <li><a href="/lesson8">Урок 8</a></li>
+
                     </ul>
                 </div>
             </div>

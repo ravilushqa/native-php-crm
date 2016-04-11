@@ -62,15 +62,20 @@
     </div>
     <h1>Новости</h1>
     <?php foreach ($items as $item):?>
-    <h3 style="text-align: left"><?php echo $item['title'];?></h3>
-        <a href="newsone.php">прочитать новость целиком</a>
-    <?php endforeach; ?>
+        <form method="post" action="newsone.php">
+            <h3 style="text-align: left"><?php echo $item['title'];?></h3>
+            <button  type="submit" name="id" value="<?php echo $item['id']; ?>">прочитать новость целиком</button>
+            <div>id = <?php echo $item['id']; ?></div>
+        </form>
+    <?php endforeach;
+    ?>
+
     <br>
     <a href="/lesson1/add.php">Добавить новость</a><br>
-<h4 style="text-align: right"><?php
+<?php
 echo 'Дата:           '. date('d-m-Y') ."\n";
 echo 'Время:           '. date('H:i:s') ."\n";
-?></h4>
+?>
 
 
 
