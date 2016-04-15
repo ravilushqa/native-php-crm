@@ -15,18 +15,18 @@ abstract class AbstractModel
     public static function getOne($id)
     {
         $db = new DB();
-        $sql = 'SELECT * FROM ' .static::$table . 'WHERE id=' . $id;
+        $sql = 'SELECT * FROM ' .static::$table . ' WHERE id=' . $id;
         return $db->queryOne($sql, static::$class);
 
     }
-    public static function News_insert($data){
-        $sql = "
-    INSERT INTO news
-    (title, text)
-    VALUES
-    ('" . $data['title'] ."', '" . $data['text'] ."' )
-    ";
-        Sql_exec($sql);
-    }
 
+    public static function News_insert($data)
+    {
+        $db = new DB();
+        $sql = "INSERT INTO news (title, text) VALUES ('" . $data['title'] . "', '" . $data['text'] . "')";
+        if ($db->queryInsert($sql) !== false){
+            return header('Location: /lesson2/index.php');
+        }else return false;
+
+    }
 }

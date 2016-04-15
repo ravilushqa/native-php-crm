@@ -9,10 +9,7 @@ function News_getAll()
 }
 function News_getOne($id)
 {
-    $sql = "
-    SELECT * FROM news
-    WHERE id=" . $id . "
-    ";
+    $sql = "SELECT * FROM news WHERE id=" . $id . " ";
     return Sql_query($sql);
 }
 

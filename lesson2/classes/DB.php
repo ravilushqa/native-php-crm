@@ -25,4 +25,13 @@ class DB
     {
         return $this->queryAll($sql, $class)[0];
     }
+    public function queryInsert($sql)
+    {
+        $res = mysql_query($sql);
+        if (false === $res) {
+            return false;
+        }
+        return true;
+
+    }
 }

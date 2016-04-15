@@ -1,2 +1,12 @@
 AddHandler application/x-httpd-php .php .htm .html
 php_flag register_globals 0
+RewriteEngine On
+
+#если запрошенного файла или папки не существует
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#регулярим)
+RewriteRule ^(.*)/(.*)/([0-9]+)/?$ index.php?Ctrl=$1&act=$2&id=$3 [L,QSA]
+
+

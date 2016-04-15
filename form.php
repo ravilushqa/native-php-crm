@@ -10,24 +10,9 @@
     <title>PHP lvl 2</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/style.css" rel="stylesheet">
-    <style>
-        h1,h2,h3,h4,h5,h6 {
-            text-align: center;
-        }
-        img {
-            height:200px;
-            margin-right: 10px;
-        }
-        #galery{
-            display:block;
-            text-align:center;
-            margin:0 auto;
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 
-        }
-
-    </style>
 </head>
 
 <body>

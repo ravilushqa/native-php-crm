@@ -6,7 +6,6 @@ if  (!empty($_POST)) {
 
     if (!empty($_POST['title'])){
         $data['title'] = $_POST['title'];
-        $date['date'] = dat;
     }
 
     if (!empty($_POST['text'])) {

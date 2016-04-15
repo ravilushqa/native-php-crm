@@ -31,8 +31,9 @@
 </head>
 
 <body>
-<h1>Добавить новость</h1>
-    <form action="/lesson2/index.php" method="post" enctype="multipart/form-data">
+<h1>Панель Администратора</h1>
+<h2>Добавить новость</h2>
+    <form action="/lesson2/admin.php" method="post" enctype="multipart/form-data">
 
         <div class="col-lg-6">
             <div class = "form-group">
@@ -52,4 +53,4 @@
     <a  href="/lesson1/index.php">На главную</a>
 
 
-<?php require __DIR__ .'/../../../form_end.php';
+<?php require __DIR__ . '/../../../form_end.php';
