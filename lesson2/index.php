@@ -10,7 +10,6 @@ $controller = new $controllerClassName;
 
 $method = 'action' . $act;
 $controller->$method();
-var_dump($_GET);
 
 
 ?>
