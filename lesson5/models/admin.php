@@ -7,5 +7,5 @@ class admin extends AbstractModel
     public $data;
 
     protected static $table = 'news';
-    protected static $class = 'Admin';
+    protected static $class = 'News';
 }

@@ -33,7 +33,7 @@
 <body>
 <h1>Панель Администратора</h1>
 <h2>Добавить новость</h2>
-    <form action="/lesson2/admin.php" method="post" enctype="multipart/form-data">
+    <form action="/lesson5/admin.php" method="post" enctype="multipart/form-data">
 
         <div class="col-lg-6">
             <div class = "form-group">
@@ -50,7 +50,7 @@
         <input type="submit" style="clear: both">
     </form>
     <br>
-    <a  href="/lesson1/index.php">На главную</a>
+    <a  href="/../lesson5/index.php">На главную</a>
 
 
 <?php require __DIR__ . '/../../../form_end.php';
