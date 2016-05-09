@@ -10,14 +10,14 @@
     <title>PHP lvl 2</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/style.css" rel="stylesheet">
     <style>
-        h1,h2,h3,h4,h5,h6 {
-            text-align: center;
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
         }
         img {
-            height:200px;
+    height:200px;
             margin-right: 10px;
         }
         #galery{
@@ -33,7 +33,7 @@
 <body>
 <h1>Панель Администратора</h1>
 <h2>Добавить новость</h2>
-    <form action="/lesson5/admin.php" method="post" enctype="multipart/form-data">
+    <form action="/../lesson5/index.php?ctrl=Admin&act=Ins" method="post" enctype="multipart/form-data">
 
         <div class="col-lg-6">
             <div class = "form-group">
@@ -46,11 +46,14 @@
                 <label for = "name">Основной текст</label>
                 <textarea name="text" class = "form-control" rows = "7"></textarea>
             </div
-        </div>
+</div>
         <input type="submit" style="clear: both">
     </form>
     <br>
     <a  href="/../lesson5/index.php">На главную</a>
 
-
-<?php require __DIR__ . '/../../../form_end.php';
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

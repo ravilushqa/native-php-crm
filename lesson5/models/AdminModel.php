@@ -1,6 +1,6 @@
 <?php
 
-class admin extends AbstractModel
+class AdminModel extends AbstractModel
 {
     public $title;
     public $text;

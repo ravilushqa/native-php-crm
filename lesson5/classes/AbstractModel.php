@@ -33,7 +33,7 @@ abstract class AbstractModel
         $db->setClassName($class);
         return $db->query($sql, [':id' => $id])[0];
     }
-    public  function findByColumn ($column, $value)
+    public static function findByColumn ($column, $value)
     {
 
         $sql = 'SELECT * FROM ' .static::$table . ' WHERE ' .$column . '= "' . $value . '" ';
@@ -71,7 +71,12 @@ abstract class AbstractModel
         $db = new DB();
         $db->query($sql);
     }
-
+    public static function del($id)
+    {
+        $sql = "DELETE FROM `news` WHERE id=$id";
+        $db = new DB();
+        $db->query($sql);
+    }
 
 
 }
