@@ -17,7 +17,6 @@ class AdminController {
         }
         else
         {
-            var_dump($_POST);
             echo 'Ошибка';
         }
     }
